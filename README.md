@@ -1,0 +1,2 @@
+# Code along Noops page clone
+## Following a code along with the course material at Code Excursion to see what the students are going through in their material and what bugs I can come across, to better be able to answer the students questions, since I'm a code coach for the course.
