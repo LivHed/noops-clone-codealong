@@ -10,6 +10,23 @@ h2 {
     line-height: 32px;
 }
 
+h3 {
+    font-size: 26px;
+}
+
+h4 {
+    font-size: 32px;
+    font-weight: 100;
+    margin-top: -16px;
+    margin-bottom: 16px;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+}
+
 /*---- Header -----*/
 
 header {
@@ -51,13 +68,11 @@ nav a {
 
 /*----- Welcome container -----*/
 
-.welcome-container {
+.welcome-container .container {
     padding: 100px 16px;
     display: flex;
     flex-direction: column;
-    width: 100%;
-    max-width: 1100px;
-    margin: 0 auto; /* center the image and text */
+    box-sizing: border-box;
 }
 
 .welcome-container img {
@@ -66,6 +81,59 @@ nav a {
 
 .welcome-container div {
    text-align: center;
+}
+
+/*--- Challenges container ---*/
+
+.challenges-container {
+    background-color: white;
+    color: #000;
+    text-align: center;
+    padding: 24px;
+}
+
+.challenges {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.challenges a {
+    background: #fafafa;
+    border: 2px solid #24292d;
+    border-radius: 16px;
+    width: 100%;
+    text-decoration: none; 
+    color: #000;
+    box-shadow: 12px 12px 0 0 #d8eee6;
+    padding: 16px;
+    margin-bottom: 32px;
+}
+
+.card-header-box {
+    border: 2px solid #d8eee6;
+    border-radius: 16px;
+}
+
+.challenges a img {
+    width: 80%;
+}
+
+.circles {
+    display: flex;
+    justify-content: space-between;
+    margin: 16px;
+    margin-bottom: -16px;
+}
+
+.circles span {
+    width: 8px;
+    height: 8px;
+    border-radius: 50%;
+    background: #ec4342;
+}
+
+.circles span:last-child {
+    background: #5583c3;
 }
 
 
@@ -92,13 +160,19 @@ nav a {
 
 @media (min-width: 900px) {
 
-    .welcome-container {
+    .welcome-container .container {
         flex-direction: row;
         align-items: center;
     }
 
     .welcome-container img {
         width: 50%;
+    }
+
+    .challenges a {
+        width: 25%;
+        flex-grow: 1;
+        margin: 16px;
     }
 
 }
